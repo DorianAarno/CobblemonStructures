@@ -7,7 +7,7 @@ import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 
 public class CobblemonStructures implements ModInitializer {
     public static final String MOD_NAME = "cobblemon_structures";
-    public static final String VILLAGE_POKECENTER_PATH = "village/amey_pokecenter_final2";
+    public static final String VILLAGE_POKECENTER_PATH = "village/pokecenter";
     public static final String TEST = "village/testd";
 
     @Override
