@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "cobblemon_structures",
+  "version": "1.0.0",
+  "name": "Cobblemon Structures",
+  "description": "Adds generic pokemon structures like poke-center",
+  "authors": [
+    "aarno.dev"
+  ],
+  "license": "MIT",
+  "environment": "*",
+  "mixins": [
+  ],
+  "entrypoints": {
+    "client": [
+    ],
+    "main": [
+      "dev.aarno.cobblemon_structures.CobblemonStructures"
+    ]
+  },
+  "depends": {
+    "java": ">=21",
+    "minecraft": "1.20.1",
+    "fabricloader": ">=0.16.0",
+    "fabric": "*",
+    "cobblemon": "1.5.2"
+  }
+}
