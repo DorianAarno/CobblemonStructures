@@ -16,7 +16,22 @@ architectury {
 loom {
     silentMojangMappingsLicense()
     accessWidenerPath.set(file("src/main/resources/cobblemon_structures.accesswidener"))
+    runs {
+        // This adds a new Gradle task that runs the datagen API
+        create("datagen") {
+            inherit(runs.getByName("server"))
+            name = "Data Generation"
+            vmArgs(
+                "-Dfabric-api.datagen",
+                "-Dfabric-api.datagen.output-dir=${project.file("src/main/generated")}",
+                "-Dfabric-api.datagen.modid=cobblemon_structures"
+            )
+            runDir = "build/datagen"
+        }
+    }
 }
+
+
 
 repositories {
     mavenCentral()
@@ -28,6 +43,14 @@ repositories {
         url = uri("https://api.modrinth.com/maven")
         content {
             includeGroup("maven.modrinth")
+        }
+    }
+}
+
+sourceSets {
+    named("main") {
+        resources {
+            srcDir("src/main/generated")
         }
     }
 }

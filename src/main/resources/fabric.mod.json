@@ -10,12 +10,16 @@
   "license": "MIT",
   "environment": "*",
   "mixins": [
+    "cobblemon_structures.mixins.json"
   ],
   "entrypoints": {
     "client": [
     ],
     "main": [
       "dev.aarno.cobblemon_structures.CobblemonStructures"
+    ],
+    "fabric-datagen": [
+      "dev.aarno.cobblemon_structures.CobblemonStructuresDataGenerator"
     ]
   },
   "depends": {

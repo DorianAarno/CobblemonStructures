@@ -1,4 +1,4 @@
-package dev.aarno.cobblemon_structures.village;
+package dev.aarno.cobblemon_structures.worldgen.village;
 
 import net.fabric_extras.structure_pool.api.StructurePoolAPI;
 import net.minecraft.server.MinecraftServer;
