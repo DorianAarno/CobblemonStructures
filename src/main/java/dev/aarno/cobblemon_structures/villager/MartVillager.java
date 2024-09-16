@@ -2,6 +2,7 @@ package dev.aarno.cobblemon_structures.villager;
 
 import com.google.common.collect.ImmutableSet;
 import dev.aarno.cobblemon_structures.CobblemonStructures;
+import dev.aarno.cobblemon_structures.block.ModBlocks;
 import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
@@ -18,7 +19,7 @@ import net.minecraft.world.poi.PointOfInterestType;
 public class MartVillager {
 
     public static final RegistryKey<PointOfInterestType> MART_GUY_POI_KEY = poiKey("martguypoi");
-    public static final PointOfInterestType MART_GUY_POI = registerPoi("martguypoi", Blocks.BAMBOO_TRAPDOOR);
+    public static final PointOfInterestType MART_GUY_POI = registerPoi("martguypoi", ModBlocks.MART_CASH_REGISTER);
 
     public static final VillagerProfession MART_GUY = registerProfession("mart_guy", MART_GUY_POI_KEY);
 

@@ -1,10 +1,16 @@
 package dev.aarno.cobblemon_structures;
 
+import dev.aarno.cobblemon_structures.block.ModBlocks;
+import dev.aarno.cobblemon_structures.item.ModItems;
 import dev.aarno.cobblemon_structures.util.MartTrades;
 import dev.aarno.cobblemon_structures.villager.MartVillager;
 import net.fabricmc.api.ModInitializer;
 import dev.aarno.cobblemon_structures.worldgen.village.AddToVillage;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.block.AbstractBlock;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,6 +20,10 @@ public class CobblemonStructures implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static final String VILLAGE_POKECENTER_PATH = "village/village_pokecenter";
     public static final String TEST = "village/testd";
+
+
+//    ItemGroupEvents.modifyEntriesEvent(ModItems.CUSTOM_ITEM_GROUP_KEY).register((itemGroup) -> {
+//        itemGroup.add(ModBlocks.CONDENSED_DIRT.asItem());
 
     @Override
     public void onInitialize() {
@@ -28,5 +38,7 @@ public class CobblemonStructures implements ModInitializer {
 
         MartVillager.registerVillagers();
         MartTrades.registerCustomTrades();
+        ModBlocks.initialize();
+        ModItems.registerItems();
     }
 }
