@@ -1,5 +1,5 @@
 {
-  "entity.minecraft.villager.mart_guy": "Mart Guy",
+  "entity.minecraft.villager.retailer": "Retailer",
   "itemGroup.cobblemon_structures": "Cobblemon Structures",
   "block.cobblemon_structures.mart_cash_register": "Cash Register"
 }
