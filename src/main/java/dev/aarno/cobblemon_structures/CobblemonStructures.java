@@ -2,8 +2,8 @@ package dev.aarno.cobblemon_structures;
 
 import dev.aarno.cobblemon_structures.block.ModBlocks;
 import dev.aarno.cobblemon_structures.item.ModItems;
-import dev.aarno.cobblemon_structures.util.MartTrades;
-import dev.aarno.cobblemon_structures.villager.MartVillager;
+import dev.aarno.cobblemon_structures.util.CustomTrades;
+import dev.aarno.cobblemon_structures.villager.CustomVillagers;
 import net.fabricmc.api.ModInitializer;
 import dev.aarno.cobblemon_structures.worldgen.village.AddToVillage;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
@@ -36,8 +36,8 @@ public class CobblemonStructures implements ModInitializer {
             AddToVillage.injectStructureIntoPool(server, "minecraft:village/snowy/houses", MOD_ID + ":" + VILLAGE_POKEMART_PATH, 500, 1);
         });
 
-        MartVillager.registerVillagers();
-        MartTrades.registerCustomTrades();
+        CustomVillagers.registerVillagers();
+        CustomTrades.registerCustomTrades();
         ModBlocks.initialize();
         ModItems.registerItems();
     }

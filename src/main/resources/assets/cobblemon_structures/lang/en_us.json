@@ -1,5 +1,9 @@
 {
   "entity.minecraft.villager.retailer": "Retailer",
+  "entity.minecraft.villager.wandering_retailer": "Wandering Retailer",
+  "entity.minecraft.villager.drug_dealer": "Drug Dealer",
   "itemGroup.cobblemon_structures": "Cobblemon Structures",
-  "block.cobblemon_structures.mart_cash_register": "Cash Register"
+  "block.cobblemon_structures.mart_cash_register": "Cash Register",
+  "block.cobblemon_structures.dirty_mart_cash_register": "Dirty Cash Register",
+  "block.cobblemon_structures.rusty_mart_cash_register": "Rusty Cash Register"
 }

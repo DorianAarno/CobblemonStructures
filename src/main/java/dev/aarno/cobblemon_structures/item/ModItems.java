@@ -26,6 +26,8 @@ public class ModItems {
         Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, CUSTOM_ITEM_GROUP);
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(itemGroup -> {
             itemGroup.add(ModBlocks.MART_CASH_REGISTER.asItem());
+            itemGroup.add(ModBlocks.RUSTY_MART_CASH_REGISTER.asItem());
+            itemGroup.add(ModBlocks.DIRTY_MART_CASH_REGISTER.asItem());
             // ...
         });
     }

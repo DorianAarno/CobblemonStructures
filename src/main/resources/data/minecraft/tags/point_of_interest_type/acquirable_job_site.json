@@ -4,6 +4,14 @@
     {
       "id": "cobblemon_structures:retailerpoi",
       "required": false
+    },
+    {
+      "id": "cobblemon_structures:wanderingretailerpoi",
+      "required": false
+    },
+    {
+      "id": "cobblemon_structures:drugdealerpoi",
+      "required": false
     }
   ]
 }

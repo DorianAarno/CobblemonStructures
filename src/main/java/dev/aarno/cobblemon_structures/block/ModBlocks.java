@@ -17,6 +17,16 @@ public class ModBlocks {
             "mart_cash_register",
             true
     );
+    public static final Block RUSTY_MART_CASH_REGISTER = ModBlocks.register(
+            new Block(AbstractBlock.Settings.copy(Blocks.OBSIDIAN)),
+            "rusty_mart_cash_register",
+            true
+    );
+    public static final Block DIRTY_MART_CASH_REGISTER = ModBlocks.register(
+            new Block(AbstractBlock.Settings.copy(Blocks.OBSIDIAN)),
+            "dirty_mart_cash_register",
+            true
+    );
 
 
     public static Block register(Block block, String name, boolean shouldRegisterItem) {

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "cobblemon_structures:block/mart_cash_register"
+  }
+}
