@@ -16,14 +16,12 @@ public class CobblemonStructures implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
     public static final String VILLAGE_POKECENTER_PATH = "village/pokecenter";
     public static final String VILLAGE_POKEMART_PATH = "village/pokemart";
-    public static final String TEST = "village/testd";
 
 
     @Override
     public void onInitialize() {
         ServerLifecycleEvents.SERVER_STARTING.register(server -> {
             AddToVillage.injectStructureIntoPool(server, "minecraft:village/plains/houses", MOD_ID + ":" + VILLAGE_POKECENTER_PATH, 500, 1);
-            AddToVillage.injectStructureIntoPool(server, "minecraft:village/plains/houses", MOD_ID + ":" + TEST, 500, 1);
             AddToVillage.injectStructureIntoPool(server, "minecraft:village/desert/houses", MOD_ID + ":" + VILLAGE_POKECENTER_PATH, 500, 1);
             AddToVillage.injectStructureIntoPool(server, "minecraft:village/savanna/houses", MOD_ID + ":" + VILLAGE_POKECENTER_PATH, 500, 1);
             AddToVillage.injectStructureIntoPool(server, "minecraft:village/taiga/houses", MOD_ID + ":" + VILLAGE_POKECENTER_PATH, 500, 1);

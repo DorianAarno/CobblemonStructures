@@ -13,17 +13,17 @@ import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static final Block MART_CASH_REGISTER = ModBlocks.register(
-            new Block(AbstractBlock.Settings.copy(Blocks.OBSIDIAN)),
+            new Block(AbstractBlock.Settings.copy(Blocks.BEDROCK)),
             "mart_cash_register",
             true
     );
     public static final Block RUSTY_MART_CASH_REGISTER = ModBlocks.register(
-            new Block(AbstractBlock.Settings.copy(Blocks.OBSIDIAN)),
+            new Block(AbstractBlock.Settings.copy(Blocks.BEDROCK)),
             "rusty_mart_cash_register",
             true
     );
     public static final Block DIRTY_MART_CASH_REGISTER = ModBlocks.register(
-            new Block(AbstractBlock.Settings.copy(Blocks.OBSIDIAN)),
+            new Block(AbstractBlock.Settings.copy(Blocks.BEDROCK)),
             "dirty_mart_cash_register",
             true
     );
